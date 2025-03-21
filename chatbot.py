@@ -30,17 +30,17 @@ def get_response(user_input):
     return random.choice(responses["default"])
 
 def chat():
-    print("🤖 ChatBot: Hello! Type 'exit' to stop chatting.")
+    print(" ChatBot: Hello! Type 'exit' to stop chatting.")
 
     while True:
         user_input = input("You: ")
 
         if user_input.lower() in ["exit", "bye"]:
-            print("🤖 ChatBot:", random.choice(responses["bye"]))
+            print(" ChatBot:", random.choice(responses["bye"]))
             break
         
         response = get_response(user_input)
-        print("🤖 ChatBot:", response)
+        print(" ChatBot:", response)
 
 
 if __name__ == "__main__":
